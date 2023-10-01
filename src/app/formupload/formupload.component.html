@@ -1,0 +1,6 @@
+<p>formupload works!</p>
+<button style="background-color: transparent; border: none" (click)="userPictureFile.click()">
+  <img [src]="userPictureUrl" class="rounded-circle" width="120px" height="100px"/>
+  <input hidden="" type="file" #userPictureFile (change)="onUserChangePictureFile(userPictureFile.files)"
+         name="userPictureFile" accept=".png, .jpg, .jpeg, .bmp"/>
+</button>
